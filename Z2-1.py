@@ -5,9 +5,20 @@ for i in flukeResults:
     deltaU = i*0.4/100+0.01
     flukeDelta.append(deltaU)
 
-print("10 V ger:", float(flukeDelta[0]*1000))
-print("20 V ger:", float(flukeDelta[1]*1000))
-print("30 V ger:", float(flukeDelta[2]*1000))
+print("10 V ger för Fluke:", float(flukeDelta[0]*1000))
+print("20 V ger för Fluke:", float(flukeDelta[1]*1000))
+print("30 V ger för Fluke:", float(flukeDelta[2]*1000))
+
+agilentResults = []
+agilentDelta = []
+
+for i in agilentResults:
+    deltaAgilent = i*0.05/100+0.002
+    agilentDelta.append(deltaAgilent)
+
+print("10 V ger för Agilent:", float(agilentDelta[0]*1000), "mV")
+print("20 V ger för Agilent:", float(agilentDelta[1]*1000), "mV")
+print("30 V ger för Agilent:", float(agilentDelta[2]*1000), "mV")
 
 hpResult = [10.126, 20.134, 30.080]
 hpDelta = []
