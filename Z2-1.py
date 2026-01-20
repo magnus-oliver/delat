@@ -1,4 +1,4 @@
-flukeResults = [10.10, 20.08, 30.09]
+flukeResults = [] # era värden för fluke här
 flukeDelta = []
 
 for i in flukeResults:
@@ -9,7 +9,7 @@ print("10 V ger för Fluke:", float(flukeDelta[0]*1000))
 print("20 V ger för Fluke:", float(flukeDelta[1]*1000))
 print("30 V ger för Fluke:", float(flukeDelta[2]*1000))
 
-agilentResults = []
+agilentResults = [] # era värden för agilent här
 agilentDelta = []
 
 for i in agilentResults:
@@ -20,7 +20,7 @@ print("10 V ger för Agilent:", float(agilentDelta[0]*1000), "mV")
 print("20 V ger för Agilent:", float(agilentDelta[1]*1000), "mV")
 print("30 V ger för Agilent:", float(agilentDelta[2]*1000), "mV")
 
-hpResult = [10.126, 20.134, 30.080]
+hpResult = [] # era värden för HP här
 hpDelta = []
 
 for i in hpResult:
